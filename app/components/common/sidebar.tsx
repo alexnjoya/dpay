@@ -1,14 +1,14 @@
 import { FaWallet, FaUserFriends, FaRegListAlt, FaCog } from "react-icons/fa";
 import Image from "next/image";
-import Logo from "../../assets/logo.png";
+import Logo from "../assets/logo.png";
 import Link from "next/link";
-import transaction from "../../assets/transaction.png"
-import manualrestion from "../../assets/manualregistion.png"
-import logout from "../../assets/logout.png"
-import paydues from "../../assets/paydue.png"
-import dashboard from "../../assets/dashboard.png"
-import settings from "../../assets/settings.png"
-import cyptopay from "../../assets/cryptopayy.png"
+import transaction from "../assets/transaction.png"
+import manualrestion from "../assets/manualregistion.png"
+import logout from "../assets/logout.png"
+import paydues from "../assets/paydue.png"
+import dashboard from "../assets/dashboard.png"
+import settings from "../assets/settings.png"
+import cyptopay from "../assets/cryptopayy.png"
 
 const Sidebar: React.FC = () => {
   

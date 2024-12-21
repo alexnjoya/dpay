@@ -1,9 +1,10 @@
+import React, { JSX } from 'react';
+import Dashboard from "./dashboard/page"
 
-
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Dashboard />
     </div>
   )
 }
