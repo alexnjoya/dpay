@@ -67,9 +67,9 @@ const Sidebar: React.FC = () => {
             </Link>
           </li>
           <li className="flex items-center cursor-pointer hover:text-blue-400">
-            <Link className="flex items-center" href="/Settings">
+            <Link className="flex items-center" href="/profile">
             <Image  src={settings}  alt="settings" width={40 } height={40}/>
-              <span className=" p-3">Settings</span>
+              <span className=" p-3">Profile</span>
             </Link>
           </li>
         </ul>

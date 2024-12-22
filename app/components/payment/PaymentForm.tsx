@@ -1,15 +1,10 @@
 import React, { FormEvent } from 'react';
 
 const Form: React.FC = () => {
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    
-  };
   return (
     <>
       <div className="flex justify-start  items-start h-auto mt-4  bg-white shadow-sm rounded-lg pl-20 pt-10">
-        <form className="w-full flex flex-col mb-10 space-y-3" onSubmit={handleSubmit}>
+        <form className="w-full flex flex-col mb-10 space-y-3" >
           <input
             type="number"
             placeholder="Amount"
