@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import Google from "../../assets/google.png";
+import Google from "../assets/google.png";
 import { handleEmailLogin, handleGoogleLogin } from "./auth";
 
 const Login = () => {
