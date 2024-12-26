@@ -1,4 +1,4 @@
-import { FaWallet, FaUserFriends, FaRegListAlt, FaCog } from "react-icons/fa";
+
 import Image from "next/image";
 import Logo from "../assets/logo.png";
 import Link from "next/link";
