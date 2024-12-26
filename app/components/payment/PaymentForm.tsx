@@ -1,15 +1,18 @@
 'use client'
 import React, { FormEvent, useState } from 'react';
+import PaymentSuccessful from '../modal/paymentSuccessful';
+
 
 const PaymentForm: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [id, setId] = useState<string>("");
   const [level, setLevel] = useState<string>("");
   const [amount, setAmount] = useState<number | string>("");
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // Handle payment submission logic here
+    setIsModalOpen(true);
   };
 
   return (
@@ -74,6 +77,12 @@ const PaymentForm: React.FC = () => {
           </button>
         </form>
       </div>
+      {isModalOpen && (
+        <PaymentSuccessful 
+          onClose={() => setIsModalOpen(false)} 
+          onOutsideClick={() => setIsModalOpen(false)} 
+        />
+      )}
     </div>
   );
 };
