@@ -29,12 +29,11 @@ const TransactionTable: React.FC = () => {
           
           <div className=  "grid grid-cols-1 gap-4 mb-2 md:grid-cols-2">
           <div className="mr-28  gap-10">
-          <div className="flex justify-between items-center mb-2">
+          <div className="flex justify-between items-center mb-1">
             <h2 className="text-2xl pt-2 pb-4">Recent Transactions</h2>
-            <button className="rounded bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700">
-              Print Receipt
-            </button>
+            
           </div>
+
           </div>
           </div>
         

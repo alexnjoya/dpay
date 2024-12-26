@@ -17,7 +17,7 @@ const DashboardHeader: React.FC = () => {
           />
         </div>
 
-        <div className="flex items-center space-x-3 p-2 pr-4 bg-blue-700">
+        <div className="flex items-center rounded-xl space-x-3 p-2 pr-4 bg-blue-700">
           <button className="relative">
             <span className="absolute top-0 right-0 bg-red-600 rounded-full h-2 w-2"></span>
             <EnvelopeIcon className="h-6 w-6 text-white" />
