@@ -13,7 +13,7 @@ import cyptopay from "../assets/cryptopayy.png"
 const Sidebar: React.FC = () => {
   
   return (
-    <div className="bg-blue-800 text-sm text-white h-screen w-60 p-5">
+    <div className="bg-blue-800 text-sm text-white h-auto w-60 p-5">
       <div className="flex items-center mt-10 mb-8">
         <Image
           width={40}
@@ -27,7 +27,7 @@ const Sidebar: React.FC = () => {
       <div className=" text-xl mb-8 font-bold" >
         <h2>Manage</h2>
       </div>
-      <nav className="mb-10">
+      <nav className="mb-24">
         <ul className="space-y-1">
 
           <li className="flex items-start ml-2 text-20 cursor-pointer hover:text-blue-400">
