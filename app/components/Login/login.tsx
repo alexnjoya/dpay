@@ -1,12 +1,11 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
-import { useState, FormEvent } from "react";
 import Google from "../assets/google.png";
 
 
 const Login = () => {
-  const [email, setEmail] = useState<string>("");
+
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-50">
@@ -33,8 +32,8 @@ const Login = () => {
             <input
               type="email"
               placeholder="Enter your student email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+             
+             
               className="w-full px-12 py-4 text-gray-700 bg-blue-50 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
               required
             />
