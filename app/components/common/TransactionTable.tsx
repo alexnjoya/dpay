@@ -23,24 +23,18 @@ const TransactionTable: React.FC = () => {
   return (
     <>
       <div className="p-0">
+      <div className="flex justify-between items-center mb-1">
+            <h2 className="text-xl pt-2 pb-2">Payment History</h2>
+            
+          </div>
         
 
         <div className="min-w-full p-4 bg-white shadow-sm  rounded-lg">
           
-          <div className=  "grid grid-cols-1 gap-4 mb-2 md:grid-cols-2">
-          <div className="mr-28  gap-10">
-          <div className="flex justify-between items-center mb-1">
-            <h2 className="text-2xl pt-2 pb-4">Recent Transactions</h2>
-            
-          </div>
-
-          </div>
-          </div>
-        
 
           <table className="min-w-full">
             <thead>
-              <tr className="bg-gray-200 text-left">
+              <tr className=" text-left">
                 <th className="px-4 py-2">
                   <input type="checkbox" checked={selectAll} onChange={handleSelectAll} />
                 </th>
@@ -56,7 +50,7 @@ const TransactionTable: React.FC = () => {
               {transactions.length === 0 ? (
                 <tr>
                   <td colSpan={7} className="px-4 py-2 text-center">
-                    No transactions
+                 
                   </td>
                 </tr>
               ) : (
@@ -85,7 +79,9 @@ const TransactionTable: React.FC = () => {
               )}
             </tbody>
           </table>
+         
         </div>
+         <div className="text-center p-2 "> <p>No content</p></div>
       </div>
     </>
   );

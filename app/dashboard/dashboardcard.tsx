@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Close from "../components/assets/close.png"
 
 interface DashboardCardProps {
   title: string;
@@ -12,10 +14,17 @@ const DashboardCard: React.FC<DashboardCardProps> = ({ title, status, isRegister
       <h3 className="text-lg font-medium text-gray-800 text-center">{title}</h3>
       <div
         className={`flex items-center justify-center mt-2 px-16 py-3 text-sm font-semibold text-white rounded-xl ${
-          isRegistered ? "bg-green-500" : "bg-red-500"
+          isRegistered ? "bg-green-500" : "bg-[#D11515]"
         }`}
       >
         {status}
+        <Image 
+        className=" p-1"
+        src={Close}
+        alt="close icone"
+        width={30}
+        height={30}
+        />
       </div>
     </div>
   );
