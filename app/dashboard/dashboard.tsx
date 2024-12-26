@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
         </div>
         <div className="mt-1 flex item-end justify-end">
         <button className="px-20 py-3 text-white bg-blue-600 rounded-xl hover:bg-blue-700">
-          Register
+          Pay Dues
         </button>
       </div>
       </div>
