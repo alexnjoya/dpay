@@ -8,10 +8,6 @@ import Middle from "./dashboard"
 
 const Dashboard: React.FC = () => {
 
-  const active: React.CSSProperties = {
-    backgroundColor: "blue"
-  };
-
   return (
     <div className="flex bg-[F6F6F6]">
       <Sidebar />
