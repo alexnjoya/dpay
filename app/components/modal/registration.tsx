@@ -7,7 +7,7 @@ interface RegistrationSuccessfulProps {
   onOutsideClick: () => void;
 }
 
-const RegistrationSuccessful: React.FC<RegistrationSuccessfulProps> = ({ onClose, onOutsideClick }) => {
+const RegistrationSuccessful: React.FC<RegistrationSuccessfulProps> = ({  }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
       <div className="bg-white p-6 rounded-lg shadow-lg text-center">
