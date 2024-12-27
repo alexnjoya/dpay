@@ -3,7 +3,9 @@ import Sidebar from "../components/common/sidebar";
 import DashboardHeader from "../components/common/DashboardHeader";
 import TransactionTable from "../components/common/TransactionTable";
 import CardStats from "../components/common/CardStats";
-import Wallet from "../components/assets/wallet.png"; 
+import Wallet from "../components/assets/wallet.png";
+import Paid  from "../components/assets/paydue.png" 
+import Register from "../components/assets/manualregistion.png"
 import Image from "next/image"
 
 // Ensure Wallet is a valid image path
@@ -22,13 +24,13 @@ const Dashboard: React.FC = () => {
             color="blue"
           />
           <CardStats
-            icon={<Image src={Wallet} alt="Wallet Icon" />}
+            icon={<Image src={Paid} alt="Wallet Icon " width={24} height={24} />}
             title="Paid Students"
             value="400"
             color="blue"
           />
           <CardStats
-            icon={<Image src={Wallet} alt="Wallet Icon" />}
+            icon={<Image src={Register} alt="Wallet Icon" width={24} height={24} />}
             title="Registered students"
             value="400"
             color="blue"
