@@ -1,12 +1,13 @@
 import React from "react";
 import DashboardCard from "./dashboardcard";
+import Link from "next/link";
 
 const Dashboard: React.FC = () => {
   return (
     <div>
     <div className="flex flex-col items-start justify-start mt-4 mb-2 p-4">
       {/* Cards Section */}
-      <div className="grid grid-cols-1 gap-4 mb-2 md:grid-cols-2 ">
+      <div className="grid cursor-pointer grid-cols-1 gap-4 mb-2 md:grid-cols-2 ">
         <DashboardCard
           title="Dues Payment Status"
           status="Not Paid"
@@ -28,9 +29,11 @@ const Dashboard: React.FC = () => {
         Welcome to your dashboard. Kindly proceed with payment of dues
         </div>
         <div className="mt-1 flex item-end justify-end">
-        <button className="px-20 py-3 text-white bg-blue-600 rounded-xl hover:bg-blue-700">
-          Pay Dues
-        </button>
+        <Link href="/pay">
+          <button className="px-20 py-3 text-white bg-blue-600 rounded-xl hover:bg-blue-700">
+            Pay Dues
+          </button>
+        </Link>
       </div>
       </div>
 
