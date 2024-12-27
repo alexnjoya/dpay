@@ -25,8 +25,9 @@ const TransactionTable: React.FC = () => {
       <div className="p-0">
       <div className="flex justify-between items-center mb-1">
             <h2 className="text-xl pt-2 pb-2">Payment History</h2>
-            
-          </div>
+            <button className=" text-[#B6BAC1] px-4 py-1 rounded-md border border-[#B6BAC1]">Print all Reciept</button>
+    
+      </div>
         
 
         <div className="min-w-full p-4 bg-white shadow-sm  rounded-lg">

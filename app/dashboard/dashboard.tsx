@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardCard from "./dashboardcard";
+import DashboardCard from "../components/common/statusCards";
 import Link from "next/link";
 
 const Dashboard: React.FC = () => {
@@ -7,7 +7,7 @@ const Dashboard: React.FC = () => {
     <div>
     <div className="flex flex-col items-start justify-start mt-4 mb-2 p-4">
       {/* Cards Section */}
-      <div className="grid cursor-pointer grid-cols-1 gap-4 mb-2 md:grid-cols-2 ">
+      <div className="grid cursor-pointer  grid-cols-1 gap-4 mb-2 md:grid-cols-2 ">
         <DashboardCard
           title="Dues Payment Status"
           status="Not Paid"
