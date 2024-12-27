@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../components/common/sidebar";
+import Sidebar from "./components/sidebar";
 import DashboardHeader from "../components/common/DashboardHeader";
 import TransactionTable from "../components/common/TransactionTable";
 import CardStats from "../components/common/CardStats";

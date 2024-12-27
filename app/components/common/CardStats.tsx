@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image' ;
 
-
-
 interface CardStatsProps {
   icon: React.ReactNode | string;
   title: string;
