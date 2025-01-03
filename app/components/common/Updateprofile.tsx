@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 const Settings: FC = () => {
   return (
@@ -7,7 +7,12 @@ const Settings: FC = () => {
         <form className="w-full flex flex-col mb-10 space-y-3">
           <input
             type="text"
-            placeholder="Name"
+            placeholder="FirstName"
+            className="w-1/2 px-4 py-3 bg-gray-50 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+          />
+          <input
+            type="text"
+            placeholder="Surname"
             className="w-1/2 px-4 py-3 bg-gray-50 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
           />
           <input
